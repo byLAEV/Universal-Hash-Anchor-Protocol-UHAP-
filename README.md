@@ -1,3 +1,107 @@
+# Anchored in Bitcoin
+
+Official repository of the global project “Anchored in Bitcoin”
+
+"If your data can’t be verified outside your system, it’s not truth. It’s a narrative."
+
+## Overview
+
+Anchored in Bitcoin is a universal API and toolkit designed to anchor the state of any database or digital content directly into the Bitcoin blockchain.  
+Its mission is to provide a decentralized, transparent, and incorruptible root of trust.
+
+It allows anyone on Earth (organizations, DAOs, individuals, servers, governments, artists) to cryptographically sign their data and verify its integrity, detecting any tampering or manipulation through public Bitcoin-based proof.
+
+## Core Function
+
+- Seal the state of databases or files using cryptographic hashes  
+- Anchor those hashes on the Bitcoin blockchain via OP_RETURN transactions  
+- Enable anyone to externally verify whether data has been altered  
+- Ensure data integrity, transparency, and sovereignty
+
+## How It Works (Step-by-Step)
+
+1. Select the content  
+   Choose what part of your system you want to anchor: entire database, key tables, documents, texts, contracts, evidence, etc.
+
+2. Deterministic serialization  
+   Convert the data into a stable format like sorted JSON or flat CSV.
+
+3. Hash computation  
+   Generate a cryptographic hash (e.g. SHA256) of the serialized content.
+
+4. Submit to the API  
+   Send that hash to the Anchored in Bitcoin API to be signed and broadcasted to the Bitcoin network using the OP_RETURN field.
+
+5. Blockchain confirmation  
+   You receive a TXID that proves the anchoring. This becomes a public and immutable record, timestamped and accessible worldwide.
+
+6. Public verification  
+   Anyone can re-compute the hash from the data and compare it to the one stored on Bitcoin.  
+   If it doesn’t match — the content was altered.
+
+## Repository Contents
+
+- /api/: REST API source code for anchoring and verifying hashes on Bitcoin  
+- /clients/: Usage examples in Python, Node.js, Bash  
+- /utils/: Scripts for deterministic serialization and hashing  
+- /examples/: Real-world implementation cases  
+- whitepaper.md: Technical and philosophical manifesto  
+- /docs/: Integration guides for PostgreSQL, MongoDB, Redis, etc.
+
+## Use Cases
+
+| Sector        | Use Case |
+|---------------|----------|
+| Education     | Verifiable, immutable academic records  
+| Justice       | Digital evidence and official declarations sealing  
+| Journalism    | Anchor investigations and whistleblower material  
+| DAOs / NGOs   | Transparent voting and governance anchoring  
+| Digital Art   | Authenticated works without reliance on NFTs  
+| Governments   | Anchored statistics and public policy data  
+| Enterprises   | Auditable financials and data integrity systems  
+
+## Project Philosophy
+
+Any truth that matters must be able to be anchored in Bitcoin.  
+If it can’t — it’s not truth. It’s narrative.
+
+We reject:  
+- Shitcoins  
+- Institutional censorship  
+- Third-party dependency  
+- Centralized narratives
+
+We promote:  
+- Radical transparency  
+- Individual sovereignty  
+- Verifiable integrity  
+- Corruption-resistant design
+
+## Target Audience
+
+- Developers of critical systems  
+- Information architects  
+- Artists, writers, journalists  
+- Privacy and truth activists  
+- Ethical governments and DAOs  
+- Web3 projects with real decentralization goals
+
+## License
+
+MIT — full freedom to use, modify, and implement.  
+Any attempt to co-opt or corrupt this tool for centralized purposes will be publicly exposed.
+
+## Contact / Integration
+
+Want to integrate Anchored in Bitcoin into your system?  
+Want to contribute or propose improvements?
+
+Direct contact:  
+laev.lab@proton.me  
+https://github.com/lerryalexanderelizondo
+
+Anchored in Bitcoin is for those who refuse to have their truth erased.
+
 Universal Hash Anchor Protocol (UHAP)
 
 Desarrollado por
